@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; font-src https://fonts.gstatic.com; connect-src 'self' https://llm.bankr.bot https://api.bankr.bot https://coins.llama.fi https://gamma-api.polymarket.com https://min-api.cryptocompare.com; frame-ancestors 'none';">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
+<meta name="theme-color" content="#03070f"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="bankrOS"/>
+<meta name="description" content="Autonomous DeFi trading agent OS powered by Bankr on Base."/>
+<link rel="manifest" href="/public/manifest.json"/>
+<title>bankrOS &mdash; Autonomous Agent OS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<div id="scanline"></div>
+<div class="corner c-tl"></div><div class="corner c-tr"></div>
+<div class="corner c-bl"></div><div class="corner c-br"></div>
+<div id="root"></div>
+
+<!-- Load modules in dependency order -->
+<script src="/js/prices.js"></script>
+<script src="/js/constants.js"></script>
+<script src="/js/state.js"></script>
+<script src="/js/utils.js"></script>
+<script src="/js/agents.js"></script>
+<script src="/js/strategy.js"></script>
+<script src="/js/research.js"></script>
+<script src="/js/render.js"></script>
+<script src="/js/pages-core.js"></script>
+<script src="/js/pages-extra.js"></script>
+<script src="/js/events.js"></script>
+</body>
+</html>
