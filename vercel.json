@@ -1,17 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "index.html",     "use": "@vercel/static" },
-    { "src": "styles.css",     "use": "@vercel/static" },
-    { "src": "js/*.js",        "use": "@vercel/static" },
-    { "src": "public/**",      "use": "@vercel/static" },
-    { "src": "api/*.js",       "use": "@vercel/node"   }
+    { "src": "bankros.html", "use": "@vercel/static" },
+    { "src": "api/*.js",     "use": "@vercel/node"   }
   ],
   "routes": [
-    { "src": "/api/(.*)",      "dest": "/api/$1.js"    },
-    { "src": "/js/(.*)",       "dest": "/js/$1"        },
-    { "src": "/styles.css",    "dest": "/styles.css"   },
-    { "src": "/public/(.*)",   "dest": "/public/$1"    },
-    { "src": "/(.*)",          "dest": "/index.html"   }
+    { "src": "/api/(.*)",    "dest": "/api/$1.js"    },
+    { "src": "/(.*)",        "dest": "/bankros.html" }
   ]
 }
